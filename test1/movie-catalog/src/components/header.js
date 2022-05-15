@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <header>
             <nav>
-                <div className='logo'>Movie Catalog</div>
+                <div className='logo'>Movie Catalog App</div>
                 <div className='nav-item'>
                     <div className='nav-links'>
                         {routes.map((route) => {

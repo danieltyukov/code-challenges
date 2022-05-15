@@ -1,6 +1,6 @@
 import Home from "../pages/home";
-import Detail from "../pages/movie-detail";
-import Favorite from "../pages/favourites";
+import Favorite from "../pages/favorite";
+import Detail from "../pages/detail";
 
 export const routes = [
     {
@@ -8,20 +8,20 @@ export const routes = [
         exact: true,
         component: <Home />,
         title: "Home",
-        isHeaderElement: true
+        isHeaderElement: true,
     },
     {
         path: "/movies/:id",
         exact: false,
         component: <Detail />,
-        title: "Movie Detail",
-        isHeaderElement: false
+        title: "Detail",
+        isHeaderElement: false,
     },
     {
-        path: "/favourites",
+        path: "/favorites",
         exact: false,
         component: <Favorite />,
-        title: "Favourites",
-        isHeaderElement: true
-    }
+        title: "Favorites",
+        isHeaderElement: true,
+    },
 ];
